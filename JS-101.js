@@ -1,19 +1,19 @@
 /******************************************************************************
-* Aula prática 1:
+* Practice class 1:
 ******************************************************************************/
-// const name = 'Guilherme Bootcamp' // fechar com ; é facultativo no JS
-// // const indica que a variável não pode mais mudar de conteúdo.
+// const name = 'Guilherme Bootcamp' // to end with ; is optional for JS
+// // const means that the variable can´t be changed.
 // console.log(name)
 
 /******************************************************************************
-* Aula prática 2 e 3:
+* Practice class 2 and 3:
 ******************************************************************************/
-// Vamos criar um programa que calcula a média
-// das notas entre os alunos e envia
-// mensagem do cálculo da média
+// Create software for average calculations
+// for grades between students and send
+// message content the average calculated.
 
-// const name = "Guilherme" // Criamos assim uma string
-// const name2 = 'Suelen' // Criamos assim uma string com outra forma
+// const name = "Guilherme" // String created
+// const name2 = 'Suelen' // Another form to create strings
 // const name3 = `Fred, ${name} e ${name2}` /** Com as apóstrofes podemos criar uma 
 // * template string, que aceita chamada de outras variáveis internamente, com o 
 // * uso do operador ${} */
@@ -23,27 +23,27 @@
 // console.log(name4)
 // console.log(typeof name4)
 
-// Fazendo o programa simples de nota:
-// const aluno01 = "Guilherme"
-// const notaAluno01 = 9.8
+// Fazendo o programa simples de grade:
+// const student01 = "Guilherme"
+// const gradestudent01 = 9.8
 
-// const aluno02 = 'Mayk'
-// const notaAluno02 = 10
+// const student02 = 'Mayk'
+// const gradestudent02 = 10
 
-// const aluno03 = 'Diogo'
-// const notaAluno03 = 2
+// const student03 = 'Diogo'
+// const gradestudent03 = 2
 
-// const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
+// const average = (gradestudent01 + gradestudent02 + gradestudent03) / 3
 
 // // Se a média for maior que 5, parabenizar a tuma
-// if (media > 5) {
-//   // parabenizar a turma
-//   console.log(`A média da turma foi de ${media}. Parabéns!`)
+// if (average > 5) {
+//   // parabenizar a class
+//   console.log(`A média da class foi de ${average}. Parabéns!`)
 // } else {
 //   // Caso a média seja menor que 5, faze:
 //   console.log('A média foi menor que 5')
 // }
-// console.log(media)
+// console.log(average)
 
 /** AULA 4:
  * Estudo dos operadores de comparação do JS:
@@ -81,7 +81,7 @@
 //  } else {
 //   console.log('Pessoa bloqueada.')
 //  }
- // OU:
+// OU:
 //  const age = 19
 
 //  if (age >= 18) {
@@ -94,13 +94,13 @@
 //   console.log('Volte quando tiver 18')
 // }
 /** ===========================================================================
-      OPERADORES LÓGICOS:
-      
-      &&  "E"   As duas condições devem ser verdadeiras paa que a condição
-                final seja verdadeira.
-      ||  "OU"  Uma das condições deve ser verdadeira para que a ondição
-                final seja verdadeira.
-      !   "NÃO" Nega uma condição
+OPERADORES LÓGICOS:
+
+&&  "E"   As duas condições devem ser verdadeiras paa que a condição
+      final seja verdadeira.
+||  "OU"  Uma das condições deve ser verdadeira para que a ondição
+      final seja verdadeira.
+!   "NÃO" Nega uma condição
 ==============================================================================*/
 //  console.log(5 == 5 && 6 == 6) // true
 //  console.log(5 == 5 && 6 != 6) // false
@@ -131,7 +131,7 @@
  *    +   Adição
  *    -   Subtração
  * 
-   ===========================================================================*/
+ ===========================================================================*/
 
 //  console.log(2 * 2) // 4
 //  console.log(2 / 2) // 1
@@ -144,169 +144,201 @@
  * Cada objeto é declarado usando chaves para definir os valores da variável,
  * transformado ela em um objeto.
  * Dentro das chaves, criamos os MÉTODOS (FUNCIONALIDADES que existirão dentro do
- * objeto, como nome, nota, etc.).
+ * objeto, como name, grade, etc.).
  * Sendo assim, um objeto é uma coleção de propriedades que recebem valores ou
  * funcionalidades.
  */
-// const aluno01 = {
-//       nome: "Guilherme",
-//       nota: 9.8
+// const student01 = {
+//       name: "Guilherme",
+//       grade: 9.8
 // }
-// const aluno02 = {
-//       nome: "Mayk",
-//       nota: 10
+// const student02 = {
+//       name: "Mayk",
+//       grade: 10
 // }
-// const aluno03 = {
-//       nome: "Diego",
-//       nota: 2
+// const student03 = {
+//       name: "Diego",
+//       grade: 2
 // }
-// const media = (aluno01.nota + aluno02.nota + aluno03.nota) / 3
+// const average = (student01.grade + student02.grade + student03.grade) / 3
 
 /**   Também podemos criar ARRAYs com abjetos, usando os colchetes [] para cada
 *     elemento (objeto) e separando eles por vírgula: */
 
-// const alunos = [
+// const students = [
 //       {
-//             nome:"Guilherme",
-//             nota: 9.8
+//             name:"Guilherme",
+//             grade: 9.8
 //       },
 //       {
-//             nome: "Mayk",
-//             nota: 10
+//             name: "Mayk",
+//             grade: 10
 //       },
 //       {
-//             nome: "Diego",
-//             nota: 2
+//             name: "Diego",
+//             grade: 2
 //       }
 
 // ] // temos aqui uma coleção de objetos, ou array ou vetor.
 
 
-// const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
-// console.log(media)
+// const average = (students[0].grade + students[1].grade + students[2].grade) / 3
+// console.log(average)
 
-// const nomeDeAlunos = ["Guilherme", "Mayk", "Diego"]
+// const nameDestudents = ["Guilherme", "Mayk", "Diego"]
 
-// console.log(nomeDeAlunos)
-// console.log(alunos)
-// console.log(alunos[1])
+// console.log(nameDestudents)
+// console.log(students)
+// console.log(students[1])
 
 /**   Funções simples no JS: */
-// const alunosDaTurmaA = [
+// const classAStudents = [
 //       {
-//             nome:"Guilherme",
-//             nota: 9.8
+//             name:"Guilherme",
+//             grade: 9.8
 //       },
 //       {
-//             nome: "Mayk",
-//             nota: 0
+//             name: "Mayk",
+//             grade: 0
 //       },
 //       {
-//             nome: "Diego",
-//             nota: 2
+//             name: "Diego",
+//             grade: 2
 //       }
 // ]
 
-// const alunosDaTurmaB = [
+// const classBStudents = [
 //       {
-//             nome:"Fulano",
-//             nota: 5
+//             name:"Fulano",
+//             grade: 5
 //       },
 //       {
-//             nome: "Suelen",
-//             nota: 10
+//             name: "Suelen",
+//             grade: 10
 //       },
 //       {
-//             nome: "Marina",
-//             nota: 10
+//             name: "Marina",
+//             grade: 10
 //       }
 // ]
 
 // // Criar uma função para calcular a média:
-// function calculaMedia(alunos) {
-//       return (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+// function calculateAverage(students) {
+//       return (students[0].grade + students[1].grade + students[2].grade) / 3
 // }
 
-// const media1 = calculaMedia(alunosDaTurmaA)
-// const media2 = calculaMedia(alunosDaTurmaB)
+// const average1 = calculateAverage(classAStudents)
+// const average2 = calculateAverage(classBStudents)
 
-// function enviaMensagem(media, turma) {
-//       // Se amédia for maior que 5, parabenizar a turma
-//       if (media > 5) {
-//             console.log(`A média da ${turma} foi de ${media}. Parabéns!`)
+// function sendMessage(average, class) {
+//       // Se amédia for maior que 5, parabenizar a class
+//       if (average > 5) {
+//             console.log(`A média da ${class} foi de ${average}. Parabéns!`)
 //       } else {
-//             console.log(`A média da ${turma} é menor que 5`)
+//             console.log(`A média da ${class} é menor que 5`)
 //       }
 // }
 
-// enviaMensagem(media1, 'turma A')
-// enviaMensagem(media2, 'turma B')
+// sendMessage(average1, 'class A')
+// sendMessage(average2, 'class B')
 
 // console.log() // objeto CONSOLE com método LOG que aceita diversos PARÂMETROS
 
 // ESTRUTURA DE REPETIÇÃO:
-// Como fazer quando as turmas possuem número diferente de alunos?
+// Como fazer quando as classes possuem número diferente de estudantes?
 
-const alunosDaTurmaA = [
+const classAStudents = [
       {
-            nome:"Guilherme",
-            nota: 1.8
+            name: "Guilherme",
+            grade: 10
       },
       {
-            nome: "Mayk",
-            nota: 10
+            name: "Mayk",
+            grade: 10
       },
       {
-            nome: "Diego",
-            nota: 2
+            name: "Diego",
+            grade: 2
       },
       {
-            nome: "Teste aluno novo",
-            nota: 10
+            name: "Teste student novo",
+            grade: 1.8
       }
 ]
 
-const alunosDaTurmaB = [
+const classBStudents = [
       {
-            nome:"Fulano",
-            nota: 5
+            name: "Fulano",
+            grade: 5
       },
       {
-            nome: "Suelen",
-            nota: 10
+            name: "Suelen",
+            grade: 10
       },
       {
-            nome: "Marina",
-            nota: 10
+            name: "Marina",
+            grade: 10
       },
       {
-            nome: 'Aluno Novo',
-            nota: 5.5
+            name: 'student Novo',
+            grade: 2.5
       }
 ]
 
 // Criar uma função para calcular a média:
-function calculaMedia(alunos) {
-      let soma = 0
-      for (let i = 0; i < alunos.length; i++) {
-            
-            soma = soma + alunos[i].nota
+function calculateAverage(students) {
+      let sum = 0
+      
+      for (let i = 0; i < students.length; i++) {
+
+            sum = sum + students[i].grade
       }
-      const media = soma / (alunos.length)
-      return (media)
+      const average = sum / (students.length)
+      
+      return (average)
 }
 
-const media1 = calculaMedia(alunosDaTurmaA)
-const media2 = calculaMedia(alunosDaTurmaB)
-
-function enviaMensagem(media, turma) {
-      // Se amédia for maior que 5, parabenizar a turma
-      if (media > 5) {
-            console.log(`A média da ${turma} foi de ${media}. Parabéns!`)
+function sendMessage(average, studentClass) {
+      // Se a média for maior que 5, parabenizar a class
+      if (average > 5) {
+            console.log(`The average of ${studentClass} was ${average}. Congratulations!`)
       } else {
-            console.log(`A média da ${turma} é menor que 5`)
+            console.log(`The average of ${studentClass} is lower than 5.`)
       }
 }
 
-enviaMensagem(media1, 'turma A')
-enviaMensagem(media2, 'turma B')
+// Estudo de BOOLEANS
+// Mark student as flunked if grade is lower than 5 and also send
+// a message.
+
+function markAsFlunked(student) {
+      student.flunked = false
+      
+      if (student.grade < 5) {
+            student.flunked = true
+      }
+}
+
+
+function sendflunkedMessage(student, studentClass) {
+      if (student.flunked) {
+            console.log(`The student ${student.name} in ${studentClass} flunked!`)
+      }
+}
+
+function studentsflunked(students, studentClass) {
+      for (let student of students) {
+            markAsFlunked(student)
+            sendflunkedMessage(student, studentClass)
+      }
+      //console.table(students)
+}
+
+const average1 = calculateAverage(classAStudents)
+const average2 = calculateAverage(classBStudents)
+
+sendMessage(average1, "class A")
+sendMessage(average2, "class B")
+
+studentsflunked(classAStudents, "class A")
+studentsflunked(classBStudents, "class B")
